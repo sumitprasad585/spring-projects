@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="helloBean" name="helloBean1 helloBean2 helloBean3" class="com.sumit.beans.HelloBean">
+	</bean>
+	<alias name="helloBean1" alias="myalias"/>
+	
+	<bean id="hi" name="hi" class="com.sumit.beans.HelloBean">
+	</bean>
+	<alias name="hi" alias="hi1" />
+</beans>
