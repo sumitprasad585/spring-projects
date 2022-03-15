@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bean1" class="com.sumit.beans.Bean1" />
+	
+	<bean id="bean2" class="com.sumit.beans.Bean2" factory-method="getBean2Instance" />
+	
+	<bean id="factory" class="com.sumit.beans.Bean3Factory" />
+	<bean id="bean3" class="com.sumit.beans.Bean3" factory-method="getBean3Instance" factory-bean="factory" />
+
+</beans>
