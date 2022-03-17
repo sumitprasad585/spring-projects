@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="subjectBean" class="com.sumit.beans.Subject" />
+
+	<bean id="subjectBean1" class="com.sumit.beans.Subject">
+		<constructor-arg value="BCSL304" />
+	</bean>
+
+	<bean id="subjectBean2" class="com.sumit.beans.Subject">
+		<constructor-arg value="BCSL303" />
+		<constructor-arg value="Computer Networks" />
+	</bean>
+
+	<bean id="subjectBean3" class="com.sumit.beans.Subject">
+		<constructor-arg value="BCSL302" index="1" type="String" />
+		<constructor-arg value="System Programming" index="0"  type="String" />
+		<constructor-arg value="58" index="2" type="int" />
+	</bean>
+</beans>
